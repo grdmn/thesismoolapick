@@ -14,6 +14,10 @@
 		84A46F9D1DFD886A00B1CD1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A46F9B1DFD886A00B1CD1B /* LaunchScreen.storyboard */; };
 		84A46FA81DFD886B00B1CD1B /* moolapickTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A46FA71DFD886B00B1CD1B /* moolapickTests.swift */; };
 		84A46FB31DFD886B00B1CD1B /* moolapickUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A46FB21DFD886B00B1CD1B /* moolapickUITests.swift */; };
+		84A46FC41DFD910100B1CD1B /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84A46FC31DFD910100B1CD1B /* AdSupport.framework */; };
+		84A46FC81DFD965B00B1CD1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A46FC71DFD965B00B1CD1B /* GoogleService-Info.plist */; };
+		84A46FC91DFD965B00B1CD1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A46FC71DFD965B00B1CD1B /* GoogleService-Info.plist */; };
+		84A46FCA1DFD965B00B1CD1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A46FC71DFD965B00B1CD1B /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		438D1CE63502DDB6E5D61791 /* Pods-moolapick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moolapick.release.xcconfig"; path = "Pods/Target Support Files/Pods-moolapick/Pods-moolapick.release.xcconfig"; sourceTree = "<group>"; };
 		84A46F8F1DFD886A00B1CD1B /* moolapick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moolapick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A46F921DFD886A00B1CD1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A46F941DFD886A00B1CD1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +52,10 @@
 		84A46FAE1DFD886B00B1CD1B /* moolapickUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moolapickUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A46FB21DFD886B00B1CD1B /* moolapickUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moolapickUITests.swift; sourceTree = "<group>"; };
 		84A46FB41DFD886B00B1CD1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A46FC21DFD8FED00B1CD1B /* moolapick.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = moolapick.entitlements; sourceTree = "<group>"; };
+		84A46FC31DFD910100B1CD1B /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		84A46FC71DFD965B00B1CD1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F1BC2B7F988B6733C28B0D7E /* Pods-moolapick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moolapick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moolapick/Pods-moolapick.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A46FC41DFD910100B1CD1B /* AdSupport.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32377126F848716DC875C893 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1BC2B7F988B6733C28B0D7E /* Pods-moolapick.debug.xcconfig */,
+				438D1CE63502DDB6E5D61791 /* Pods-moolapick.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84A46F861DFD886A00B1CD1B = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +100,8 @@
 				84A46FA61DFD886B00B1CD1B /* moolapickTests */,
 				84A46FB11DFD886B00B1CD1B /* moolapickUITests */,
 				84A46F901DFD886A00B1CD1B /* Products */,
+				32377126F848716DC875C893 /* Pods */,
+				90C32E5A863A393E2CF1CC06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,12 +118,14 @@
 		84A46F911DFD886A00B1CD1B /* moolapick */ = {
 			isa = PBXGroup;
 			children = (
+				84A46FC21DFD8FED00B1CD1B /* moolapick.entitlements */,
 				84A46F921DFD886A00B1CD1B /* AppDelegate.swift */,
 				84A46F941DFD886A00B1CD1B /* ViewController.swift */,
 				84A46F961DFD886A00B1CD1B /* Main.storyboard */,
 				84A46F991DFD886A00B1CD1B /* Assets.xcassets */,
 				84A46F9B1DFD886A00B1CD1B /* LaunchScreen.storyboard */,
 				84A46F9E1DFD886A00B1CD1B /* Info.plist */,
+				84A46FC71DFD965B00B1CD1B /* GoogleService-Info.plist */,
 			);
 			path = moolapick;
 			sourceTree = "<group>";
@@ -125,6 +148,14 @@
 			path = moolapickUITests;
 			sourceTree = "<group>";
 		};
+		90C32E5A863A393E2CF1CC06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84A46FC31DFD910100B1CD1B /* AdSupport.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +163,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84A46FB71DFD886B00B1CD1B /* Build configuration list for PBXNativeTarget "moolapick" */;
 			buildPhases = (
+				BE109FD0508A0D0A89AE6F15 /* [CP] Check Pods Manifest.lock */,
 				84A46F8B1DFD886A00B1CD1B /* Sources */,
 				84A46F8C1DFD886A00B1CD1B /* Frameworks */,
 				84A46F8D1DFD886A00B1CD1B /* Resources */,
+				FEAF1F8EEA681C8DA9D5685F /* [CP] Embed Pods Frameworks */,
+				98024ED16CFDC86C9D95723A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +229,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = CL2GSQ2D6S;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					84A46FA21DFD886B00B1CD1B = {
 						CreatedOnToolsVersion = 8.1;
@@ -236,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A46F9D1DFD886A00B1CD1B /* LaunchScreen.storyboard in Resources */,
+				84A46FC81DFD965B00B1CD1B /* GoogleService-Info.plist in Resources */,
 				84A46F9A1DFD886A00B1CD1B /* Assets.xcassets in Resources */,
 				84A46F981DFD886A00B1CD1B /* Main.storyboard in Resources */,
 			);
@@ -245,6 +285,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A46FC91DFD965B00B1CD1B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,10 +293,59 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84A46FCA1DFD965B00B1CD1B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98024ED16CFDC86C9D95723A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moolapick/Pods-moolapick-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE109FD0508A0D0A89AE6F15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FEAF1F8EEA681C8DA9D5685F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moolapick/Pods-moolapick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		84A46F8B1DFD886A00B1CD1B /* Sources */ = {
@@ -411,8 +501,10 @@
 		};
 		84A46FB81DFD886B00B1CD1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1BC2B7F988B6733C28B0D7E /* Pods-moolapick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = moolapick/moolapick.entitlements;
 				DEVELOPMENT_TEAM = CL2GSQ2D6S;
 				INFOPLIST_FILE = moolapick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -424,8 +516,11 @@
 		};
 		84A46FB91DFD886B00B1CD1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 438D1CE63502DDB6E5D61791 /* Pods-moolapick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = moolapick/moolapick.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = CL2GSQ2D6S;
 				INFOPLIST_FILE = moolapick/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -512,6 +607,7 @@
 				84A46FB91DFD886B00B1CD1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A46FBA1DFD886B00B1CD1B /* Build configuration list for PBXNativeTarget "moolapickTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +616,7 @@
 				84A46FBC1DFD886B00B1CD1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84A46FBD1DFD886B00B1CD1B /* Build configuration list for PBXNativeTarget "moolapickUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +625,7 @@
 				84A46FBF1DFD886B00B1CD1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

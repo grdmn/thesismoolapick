@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,31 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func CreateAccount(_ sender: Any) {
+        FIRAuth.auth()?.createUser(withEmail: email.text!, password: password.text!, completion: {
+            error, user in
+            
+            if error != nil{
+                
+            }else{
+                print("user create")
+                
+            }
+            
+        })
+    }
+    func login(){
+        FIRAuth.auth()?.signIn(withEmail: email.text!, password: password.text!, completion: {
+            error, user in
+            
+            if error != nil{
+                print("Incorrect")
+                
+            }else{
+                print("Huzza")
+            }
+        })
+    }
 
 }
 
