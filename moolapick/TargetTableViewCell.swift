@@ -17,8 +17,8 @@ class TargetTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
-        TargetImg.image = UIImage(named: "")
-        TargetTitle.text = "Target name what you want to save money"
+        TargetImg.image = UIImage(named: "testimg")
+        TargetTitle.text = "Target name"
         
     }
 
