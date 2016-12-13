@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848D63C21DFF882D003E4AC9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848D63C11DFF882D003E4AC9 /* DashboardViewController.swift */; };
 		84A46F931DFD886A00B1CD1B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A46F921DFD886A00B1CD1B /* AppDelegate.swift */; };
 		84A46F951DFD886A00B1CD1B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A46F941DFD886A00B1CD1B /* ViewController.swift */; };
 		84A46F981DFD886A00B1CD1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A46F961DFD886A00B1CD1B /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		438D1CE63502DDB6E5D61791 /* Pods-moolapick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moolapick.release.xcconfig"; path = "Pods/Target Support Files/Pods-moolapick/Pods-moolapick.release.xcconfig"; sourceTree = "<group>"; };
+		848D63C11DFF882D003E4AC9 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		84A46F8F1DFD886A00B1CD1B /* moolapick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moolapick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A46F921DFD886A00B1CD1B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A46F941DFD886A00B1CD1B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 				84A46F9B1DFD886A00B1CD1B /* LaunchScreen.storyboard */,
 				84A46F9E1DFD886A00B1CD1B /* Info.plist */,
 				84A46FC71DFD965B00B1CD1B /* GoogleService-Info.plist */,
+				848D63C11DFF882D003E4AC9 /* DashboardViewController.swift */,
 			);
 			path = moolapick;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A46F951DFD886A00B1CD1B /* ViewController.swift in Sources */,
+				848D63C21DFF882D003E4AC9 /* DashboardViewController.swift in Sources */,
 				84A46F931DFD886A00B1CD1B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
