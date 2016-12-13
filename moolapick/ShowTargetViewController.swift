@@ -29,7 +29,11 @@ class ShowTargetViewController: UIViewController, UITableViewDataSource, UITable
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "TargetCell") as? TargetTableViewCell{
+            return cell
+        }else{
+            return TargetTableViewCell()
+        }
     }
 
     override func didReceiveMemoryWarning() {
