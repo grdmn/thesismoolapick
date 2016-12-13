@@ -76,17 +76,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zde-eg-FiJ">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
-                                <items>
-                                    <barButtonItem title="Item" width="81" id="vSw-T4-Zja"/>
-                                    <barButtonItem title="Target" width="71" id="ypz-Vc-0Ve"/>
-                                    <barButtonItem title="Item" width="77" id="QWY-Bk-HVz"/>
-                                    <barButtonItem title="Item" width="82" id="X7k-1g-QMy"/>
-                                </items>
-                            </toolbar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="276" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-Wh-4sB">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="276" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-Wh-4sB">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TargetCell" rowHeight="276" id="bx7-xy-uO9" customClass="TargetTableViewCell" customModule="moolapick" customModuleProvider="target">
@@ -131,13 +122,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ib3-Wh-4sB" firstAttribute="leading" secondItem="SCm-Ev-dxs" secondAttribute="leading" id="3Dt-n2-G79"/>
+                            <constraint firstAttribute="trailing" secondItem="ib3-Wh-4sB" secondAttribute="trailing" id="85B-Ns-B13"/>
+                            <constraint firstItem="ib3-Wh-4sB" firstAttribute="top" secondItem="2Ka-gg-mFL" secondAttribute="bottom" id="B5C-1x-ZT5"/>
+                            <constraint firstItem="shv-H7-beF" firstAttribute="top" secondItem="ib3-Wh-4sB" secondAttribute="bottom" constant="73" id="MrF-F5-6RP"/>
                             <constraint firstAttribute="trailing" secondItem="ib3-Wh-4sB" secondAttribute="trailing" id="SaI-FX-fTm"/>
-                            <constraint firstItem="Zde-eg-FiJ" firstAttribute="top" secondItem="ib3-Wh-4sB" secondAttribute="bottom" id="b4Z-lw-Rdh"/>
                             <constraint firstItem="ib3-Wh-4sB" firstAttribute="top" secondItem="2Ka-gg-mFL" secondAttribute="bottom" id="qmE-cN-SJJ"/>
                             <constraint firstItem="ib3-Wh-4sB" firstAttribute="leading" secondItem="SCm-Ev-dxs" secondAttribute="leading" id="zqd-Vg-Arp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="dAy-Iz-HSX"/>
+                    <navigationItem key="navigationItem" id="dAy-Iz-HSX">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="I9c-DM-ZXA"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="ib3-Wh-4sB" id="qtQ-Mh-s7v"/>
                     </connections>
