@@ -47,6 +47,8 @@ class AddNewViewController: UIViewController, UIImagePickerControllerDelegate, U
     
     @IBAction func SaveClick(sender: AnyObject){
         
+        _ = navigationController?.popViewController(animated: true)
+        
     }
     
 
