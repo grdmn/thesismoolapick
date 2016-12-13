@@ -30,6 +30,12 @@
 	</array>
 	<key>FirebaseAppDelegateProxyEnabled</key>
 	<false/>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Used to load a match photo</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Used to take a match photos</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Used for match photos</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

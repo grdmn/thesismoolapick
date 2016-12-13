@@ -38,6 +38,7 @@ class AddNewViewController: UIViewController, UIImagePickerControllerDelegate, U
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             TargetImg.image = image
+            SelectPictureBtn.setTitle("", for: .normal)
         }
         ImagePicker.dismiss(animated: true, completion: nil);
         
