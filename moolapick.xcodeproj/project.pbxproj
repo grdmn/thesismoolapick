@@ -21,6 +21,7 @@
 		84A46FCA1DFD965B00B1CD1B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A46FC71DFD965B00B1CD1B /* GoogleService-Info.plist */; };
 		84B381421DFF9CA500EC6EA0 /* ShowTargetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B381411DFF9CA500EC6EA0 /* ShowTargetViewController.swift */; };
 		84B381441DFF9D8400EC6EA0 /* TargetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B381431DFF9D8400EC6EA0 /* TargetTableViewCell.swift */; };
+		84B381461DFFACCF00EC6EA0 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B381451DFFACCF00EC6EA0 /* AddNewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		84A46FC71DFD965B00B1CD1B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		84B381411DFF9CA500EC6EA0 /* ShowTargetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowTargetViewController.swift; sourceTree = "<group>"; };
 		84B381431DFF9D8400EC6EA0 /* TargetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TargetTableViewCell.swift; sourceTree = "<group>"; };
+		84B381451DFFACCF00EC6EA0 /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
 		F1BC2B7F988B6733C28B0D7E /* Pods-moolapick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moolapick.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moolapick/Pods-moolapick.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,6 +137,7 @@
 				848D63C11DFF882D003E4AC9 /* DashboardViewController.swift */,
 				84B381411DFF9CA500EC6EA0 /* ShowTargetViewController.swift */,
 				84B381431DFF9D8400EC6EA0 /* TargetTableViewCell.swift */,
+				84B381451DFFACCF00EC6EA0 /* AddNewViewController.swift */,
 			);
 			path = moolapick;
 			sourceTree = "<group>";
@@ -362,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B381421DFF9CA500EC6EA0 /* ShowTargetViewController.swift in Sources */,
+				84B381461DFFACCF00EC6EA0 /* AddNewViewController.swift in Sources */,
 				84A46F951DFD886A00B1CD1B /* ViewController.swift in Sources */,
 				84B381441DFF9D8400EC6EA0 /* TargetTableViewCell.swift in Sources */,
 				848D63C21DFF882D003E4AC9 /* DashboardViewController.swift in Sources */,

@@ -145,10 +145,10 @@
             </objects>
             <point key="canvasLocation" x="1685.5999999999999" y="135.38230884557723"/>
         </scene>
-        <!--View Controller-->
+        <!--Add New View Controller-->
         <scene sceneID="sBD-Js-Sg2">
             <objects>
-                <viewController id="nAc-eG-fED" sceneMemberID="viewController">
+                <viewController id="nAc-eG-fED" customClass="AddNewViewController" customModule="moolapick" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2E3-J1-1tB"/>
                         <viewControllerLayoutGuide type="bottom" id="Nfl-u2-h1G"/>
@@ -187,10 +187,16 @@
                                 <state key="normal" title="เพิ่มเป้าหมาย">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="SaveClickWithSender:" destination="nAc-eG-fED" eventType="touchUpOutside" id="CDu-Xw-zCt"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeM-EF-9qe">
                                 <rect key="frame" x="174" y="267" width="44" height="30"/>
                                 <state key="normal" title="Select"/>
+                                <connections>
+                                    <action selector="SelectPictureClickWithSender:" destination="nAc-eG-fED" eventType="touchUpInside" id="yYu-sS-vGA"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="StP-8n-a31">
                                 <rect key="frame" x="96" y="382" width="183" height="50"/>
@@ -220,6 +226,11 @@
                             <constraint firstItem="StP-8n-a31" firstAttribute="top" secondItem="cyb-Sp-oBM" secondAttribute="bottom" constant="50" id="tem-CE-1AF"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="SelectPictureBtn" destination="xeM-EF-9qe" id="Jr6-Bq-mDI"/>
+                        <outlet property="TargetImg" destination="cyb-Sp-oBM" id="OLh-rr-gYY"/>
+                        <outlet property="TargetTitle" destination="StP-8n-a31" id="EnM-ft-UOX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aXM-FK-2Vh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
