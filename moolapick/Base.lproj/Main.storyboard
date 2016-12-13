@@ -44,6 +44,14 @@
                                     <action selector="CreateAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2qX-ND-Nnr"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biX-wt-M2X">
+                                <rect key="frame" x="151" y="607" width="72" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="test target"/>
+                                <connections>
+                                    <segue destination="yHI-pI-04U" kind="modal" id="Mhy-pH-Ezg"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -56,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--Dashboard View Controller-->
+        <!--Show Target View Controller-->
         <scene sceneID="ghM-lu-KPn">
             <objects>
-                <viewController id="u4b-Ai-FHo" customClass="DashboardViewController" customModule="moolapick" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="u4b-Ai-FHo" customClass="ShowTargetViewController" customModule="moolapick" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Ka-gg-mFL"/>
                         <viewControllerLayoutGuide type="bottom" id="shv-H7-beF"/>
@@ -81,7 +89,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="276" id="bx7-xy-uO9">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TargetCell" rowHeight="276" id="bx7-xy-uO9" customClass="TargetTableViewCell" customModule="moolapick" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="276"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bx7-xy-uO9" id="aER-31-Sus">
@@ -113,6 +121,10 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="1" green="0.88366798046591422" blue="0.25971683805919998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <outlet property="TargetImg" destination="Fxm-U7-KqH" id="Trj-mv-34g"/>
+                                            <outlet property="TargetTitle" destination="CzN-wI-9ji" id="wG9-Gq-6u2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -126,6 +138,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="dAy-Iz-HSX"/>
+                    <connections>
+                        <outlet property="tableView" destination="ib3-Wh-4sB" id="qtQ-Mh-s7v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tv8-kr-NKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
